@@ -15,7 +15,8 @@
 </head>
 <body>
     <header>
-        <a><img src="./img/Vector.png" alt="logo" width="66" height="52"></a>
+    <div class="container header-wrapper">
+        <a class="logo"><img src="./img/Vector.png" alt="logo" width="66" height="52"></a>
         <nav>
             <ul class="navigation list">
                 <li class="nav-item">
@@ -35,41 +36,68 @@
                 </li>
             </ul>
         </nav>
-        <button class="btn" type="button">Order Now</button>
+        <button class="btn main-btn" type="button">Order Now</button>
+    </div>
     </header>
     <main>
         <!--Hero-->
+        
     <section class="hero">
-    <h1 class="title-hero">Enjoy Your Favorite Food From Anywhere</h1>
-        <p class="text-hero">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
-        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-        <button class="btn" type="button">Order Now</button>
-        <img src="./img/Foto.png" alt="food" width="528" height="528">
+        <div class="container block-hero">
+            <div>
+                <h1 class="title-hero">Enjoy Your Favorite<br> Food From Anywhere</h1>
+                <p class="text-hero">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis
+                    cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                <button class="btn" type="button">Order Now</button>
+            </div>
+            <div class="slide-hero">
+                <img src="./img/Foto.png" alt="food" width="528" height="528">
+            </div>
+        </div>
+        
+        
     </section>
         <!--Offerings-->
         <section class="offerings">
-            <h2 class="title-offerings title">What’s Special About Our Offerings</h2>
-               <p class="text-offerings text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
-            cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-            <ul class="list-offerings list">
+            <div class="container">
+                <div>
+                    <img src="./img/Group.png" alt="apple" width="550" height="604">
+                </div>
+            
+                 <div>
+                 <h2 class="title-offerings title">What’s Special About Our Offerings</h2>
+                 <p class="text-offerings text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+    elementum tristique. Duis
+    cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                <ul class="list-offerings list">
                 <li class="otem-offerings">
-                    <h3 class="list-title">Fasest Delivery</h3>
-                    <p class="text-offer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                <h3 class="list-title">Fasest Delivery</h3>
+                <p class="text-offer">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Suspendisse varius enim in eros.
+                </p>
                 </li>
                 <li class="item-offrings">
-                    <h3 class="list-title">Easy To Order</h3>
-                    <p class="text-offer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-            </li>
-            </ul>
-            <button class="secondary-btn btn" type="button">Order Now</button>
-            <a class="link" href="">Read More</a>
-            <img src="./img/Group.png" alt="apple" width="550" height="604">
+                <h3 class="list-title">Easy To Order</h3>
+                <p class="text-offer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                </p>
+               </li>
+               </ul>
+               <button class="secondary-btn btn" type="button">Order Now</button>
+               <a class="link" href="">Read More > </a>
+               </div>
+           
+            </div>
+            
         </section>
         <!--Favorites-->
         <section>
+            <div class="container">
             <h2 class="title-favorites title">Some of Our Favorites</h2>
             <p class="text-favorites text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <ul class="menu">
+            <div>
+            <ul class="menu list">
                 <li class="menu-item"><img src="./img/gamburger.png" alt="gamburgr" height="315" width="315"></li>
                 <li class="menu-item"><img src="./img/Pasta.png" alt="pasta" height="315" width="315"></li>
                 <li class="menu-item"><img src="./img/pizza.png" alt="pszza" height="315" width="315"></li>
@@ -77,6 +105,8 @@
                 <li class="menu-item"><img src="./img/salat.png" alt="salat" height="315" width="315"></li>
                 <li class="menu-item"><img src="./img/borshch.png" alt="borshch" height="315" width="315"></li>
             </ul>
+            </div>
+            </div>
         </section>
         <!--Reviews-->
         <section>
@@ -109,29 +139,63 @@
         </section>
         <!--Footer-->
         
-        <a><img src="./img/Vector.png" alt="logo" width="66" height="52"></a>
-        <nav>
-            <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Service</a></li>
-                <li><a>Menu</a></li>
-                <li><a>Contact</a></li>
-            </ul>
-        </nav>
-        <section>
-            <h2>Subscribe</h2>
-            <p>Enter your email</p>
-            <button type="button">Subscribe</button>
-            <p>By subscribing you agree to with our<a href="">Privacy Policy</a></p>
-        </section>
-        <section>
-            <a href="">Privacy Policy</a>
-            <a href="">Terms of Service</a>
-            <a href="">Cookies Settings</a>
-            <p>2022 FoodSta. All right reserved.</p>
-        </section>
-    </main>
+    <footer class="page">
+        <div class="container group-footer">
+            <a class="logo"><img src="./img/Vector.png" alt="logo" width="66" height="52"></a>
+            <nav>
+                <ul class="navigation list">
+                    <li class="nav-item">
+                        <a class="nav-link link" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+
+<div>
     
+</div>
+        
+        
+        <div class="container space-between">
+            <div>
+        <ul class="list-footer list">
+            
+                <li class="link-item">
+                   <a class="footer-link" href="">Privacy Policy</a>
+                </li>
+                <li class="link-item">
+                   <a class="footer-link" href="">Terms of Service</a>
+                </li>
+                <li class="link-item">
+                   <a class="footer-link" href="">Cookies Settings</a>
+                </li>
+        </ul>
+        </div>
+        <div>
+            <p class="text-footer">2022 FoodSta. All right reserved.</p>
+        </div>
+       
+            </div>
+        
+    
+
+
+        
+    </footer>
+    </main>
+   
 </body>
 </html>

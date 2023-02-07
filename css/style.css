@@ -3,31 +3,64 @@
     --secondary-bg-btn-color: #FFFFFF;
     --bg-color: rgb(254, 254, 254);
     --btn-border: rgb(126, 177, 1);
-
-body{
-    font-family: 'Roboto', sans-serif;
-    color: #2C2C2C;
-    font-size: 16px;
-    background-color: var(--bg-color)
+    --btn-hover:rgba(255, 228, 80, 1);
 }
 
-.list{
-    list-style: none;
+    body {
+        font-family: 'Roboto', sans-serif;
+        color: #2C2C2C;
+        font-size: 16px;
+        background-color: var(--bg-color)
+    }
+
+    .list {
+        list-style: none;
+    }
+
+    .link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+.container{
+    max-width: 1247px;
+}
+    /*Header section*/
+.header-wrapper{
+    display: flex;
+
+    outline: 1px solid red;
 }
 
-.link{
-    text-decoration: none;
+.logo{
+    padding-left: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-/*Header section*/
 
-.navigation{
-    font-family: 'Roboto';
+    .navigation {
+        display: flex;
+        gap: 28px;
+        font-family: 'Roboto';
         font-size: 14px;
         line-height: 1.1;
-}
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 735px;
+    }
 
-.btn{
-    font-family: inherit;
+   .main-btn{
+    justify-content: flex-end;
+    margin-left: 30px;
+    
+    align-items: center;
+    display: flex;
+   }
+
+
+    .btn {
+
+        font-family: inherit;
         font-weight: 500;
         font-size: 13px;
         line-height: 1.5;
@@ -35,59 +68,136 @@ body{
         width: auto;
         text-align: center;
         background: var(--bg-btn-color);
-            border-radius: 30px;
+        border-radius: 30px;
+        border: none;
+        height: 32px;
+        text-align: center;
+        padding: 6px 18px;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+        color: var(--bg-btn-color);
+        text-decoration-line: underline;
+    }
+
+
+    /*Hero section*/
+
+.block-hero{
+    display: flex;
+
+    outline: 1px solid blueviolet;
 }
+    .title-hero {
 
-.nav-link:hover,
-.nav-link:focus{
-   color: var(--bg-btn-color);
-   text-decoration-line: underline;
-}
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.5;
+        padding-top: 159px;
+        max-width: 502px;
+    }
 
-
-/*Hero section*/
-.title-hero{
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.5;
-}
-
-.text-hero{
+    .text-hero {
         font-size: 16px;
         line-height: 1.5;
-}
+        max-width: 502px;
+        margin-top: 28px;
+        margin-bottom: 40px;
+    }
 
-/*Offerings*/
+    .slide-hero{
+        margin-left: 138px;
+    }
 
-.title{
+    /*Offerings*/
+
+    .title {
+        display: block;
         font-weight: 700;
         font-size: 42px;
         line-height: 1.2;
-}
+        max-width: 526px;
+    }
 
-.list-title{
-    font-weight: 700;
+    .list-title {
+        font-weight: 700;
         font-size: 18px;
         line-height: 1.2;
-}
+    }
 
-..text{
+    .text {
         font-size: 16px;
         line-height: 1.2;
-}
+        max-width: 500px;
+    }
 
-.text-offer{
+    .text-offer {
         font-size: 14px;
         line-height: 1.1;
+        max-width: 252px;
+    }
+
+    .secondary-btn {
+        background-color: var(--secondary-bg-btn-color);
+        border: 2px solid var(--btn-border);
+    }
+
+    /*Favorites*/
+    .title-favorites{
+
+    }
+
+.menu{
+    display: flex;
+    
+    gap: 32px;
+}
+
+.menu-item{
+    flex-basis: calc((100%-(32px*1))/2); 
+}
+    /*Reviews*/
+
+
+    /*Footer*/
+
+    .group-footer{
+        background-image: url(../img/footerfruits.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    
+
+    .footer-link{
+        color: var(--btn-border); 
+          /*main-text-accent-color: #7eb101;*/
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2px;
+    }
+
+.list-footer{
+    display: flex;
+    gap:20px;
+}
+
+.space-between{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 100px;
+    outline: 1px solid red;
+    
+
+    
 }
 
 
 
-.secondary-btn{
-    background-color: var(--secondary-bg-btn-color);
-    border: 2px soli var(--btn-border);
-} 
-
-/*Favorites*/
-
-/*Reviews*/
+.text-footer{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2px;
+}
