@@ -1,6 +1,6 @@
 :root{
     --bg-btn-color: rgb(187, 243, 48);
-    --secondary-bg-btn-color: #FFFFFF;
+    --secondary-bg-btn-color: rgb(255, 255, 255);
     --bg-color: rgb(254, 254, 254);
     --btn-border: rgb(126, 177, 1);
     --btn-hover:rgba(255, 228, 80, 1);
@@ -10,8 +10,25 @@
         font-family: 'Roboto', sans-serif;
         color: #2C2C2C;
         font-size: 16px;
-        background-color: var(--bg-color)
+        background-color: var(--bg-color);
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p{
+        margin: 0;
+        margin-right: 0;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
 
     .list {
         list-style: none;
@@ -24,12 +41,21 @@
 
 .container{
     max-width: 1247px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
     /*Header section*/
 .header-wrapper{
     display: flex;
-
-    outline: 1px solid red;
+    border-bottom: 1px solid #FEFEFE;
+    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 }
 
 .logo{
@@ -86,8 +112,6 @@
 
 .block-hero{
     display: flex;
-
-    outline: 1px solid blueviolet;
 }
     .title-hero {
 
@@ -112,70 +136,268 @@
 
     /*Offerings*/
 
+    .offer{
+    }
+
     .title {
         display: block;
         font-weight: 700;
         font-size: 42px;
         line-height: 1.2;
-        max-width: 526px;
+        min-width: 526px;
+        margin-bottom: 20px;
     }
 
     .list-title {
         font-weight: 700;
         font-size: 18px;
         line-height: 1.2;
+        margin-bottom: 16px;
     }
+
 
     .text {
         font-size: 16px;
         line-height: 1.2;
+        
+    }
+
+    .offerings .text{
         max-width: 500px;
+        margin-bottom: 40px;
     }
 
     .text-offer {
         font-size: 14px;
-        line-height: 1.1;
+        line-height: 1.5;
         max-width: 252px;
     }
+
+   .icon-offerings{
+        fill: var(--btn-border);
+        background-color: var(--secondary-bg-btn-color);
+        border-radius: 50%; 
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+    
 
     .secondary-btn {
         background-color: var(--secondary-bg-btn-color);
         border: 2px solid var(--btn-border);
     }
 
+    .offer{
+        display: flex;
+        background-image: url(../img/offerfone.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        
+        /* width: 1280px;
+        height: 824px; */
+    }
+
+    .picture-offer{
+        padding-left: 16px;
+        padding-bottom: 43px;
+    }
+
+    .content-offer{
+        padding-top: 99px;
+        padding-left: 51px;
+        
+        
+    }
+
+    .list-offerings{
+        display: flex;
+       padding: 0;
+       gap: 67px;
+    }
+
+
+    /* .item-offerings::before{
+        content: '';
+        background-image: url(../img/svg/rocket.svg);
+    }
+ */
+
+.offer .secondary-btn{
+    margin-top: 32px;
+}
+
+
     /*Favorites*/
-    .title-favorites{
+
+    .favorites{
+        padding-top: 100px;
+        padding-bottom: 100px;    
+    }
+
+ /*    .title-favorites{
+        padding-top: 100px;
+    } */
+    .favorites-text{
+text-align: center;
+margin-bottom: 40px;
+    }
+
+
+    .menu-list{
+    display: flex;
+    flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
 
     }
 
-.menu{
-    display: flex;
-    
-    gap: 32px;
-}
-
-.menu-item{
-    flex-basis: calc((100%-(32px*1))/2); 
-}
+/* .menu-item{
+    flex-basis: calc((100% - (32px * 2)) / 3); 
+} */
     /*Reviews*/
+   
+.reviews{
+    padding-top: 100px;
+    padding-bottom: 134px;
+    position: relative;
+    /* background-image: url(../img/bgcust.png);
+    background-repeat: no-repeat;
+    background-size: 100%; */
+}
+
+.bg-img {
+    background-image: url(../img/bgcust.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 647px;
+    width: 1480px;
+    z-index: -1;
+}
+
+ .icon-revews{
+    fill:var(--btn-hover);
+    margin-bottom: 28px;
+} 
 
 
-    /*Footer*/
+.custumers{
+  margin-top: 32px;
 
+}
+
+.custumers-list{
+    display: flex;
+    gap: 139px;
+}
+
+.reviews-text{
+    font-weight: 700;
+font-size: 18px;
+line-height: 1.2;
+max-width: 474px;
+margin-bottom: 40px;
+
+}
+
+.bg-custumers{
+    background-color: #fefefe;
+    padding: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 0px 30px 30px 30px;
+}
+
+.custumers-name{
+    margin-bottom: 2px;
+}
+.custumers-person{
+    display: flex;
+    gap: 16px;
+}
+
+/*Offers*/
+.offers{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.offers-text{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/*offers-form*/
+.field-form{
+width: 395px;
+height: 42px;
+background: #FEFEFE;
+border: 0.8px solid #FFE550;
+border-radius: 30px;
+padding-left: 11px;
+
+}
+
+.offers .btn{
+    margin-left: 32px;
+}
+
+/*Footer*/
+
+/*видимий аутлайн*/
+
+.page{
+    border-bottom: 1px solid #FEFEFE;
+    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.footer-nav{
+   display: flex; 
+   align-items: center;
+}
     .group-footer{
         background-image: url(../img/footerfruits.png);
         background-repeat: no-repeat;
         background-position: 50% 50%;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
-    
+.group-footer .navigation{
+    padding-left: 0;
+    margin-left: 148px;
+}
+
+.footer-navform{
+    display: flex;
+    gap: 320px;
+}
+
+.form-footer{
+    display: ;
+}
+    .footer-field-form{
+width: 279px;
+height: 42px;
+border: 0.8px solid #FFE550;
+border-radius: 30px;
+padding-left: 11px;
+
+    }
 
     .footer-link{
         color: var(--btn-border); 
-          /*main-text-accent-color: #7eb101;*/
-        font-weight: 400;
         font-size: 12px;
-        line-height: 1.2px;
+        line-height: 1.2;
     }
+
+    
 
 .list-footer{
     display: flex;
@@ -187,17 +409,9 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-bottom: 100px;
-    outline: 1px solid red;
-    
-
-    
 }
 
-
-
 .text-footer{
-    font-weight: 400;
     font-size: 12px;
-    line-height: 1.2px;
+    line-height: 1.2;
 }
